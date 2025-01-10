@@ -116,7 +116,7 @@ class Lattice(object):
         self.defineCellIndex()
 
         self.applyTagToAllPoint()
-        self.getAllAngles()
+        # self.getAllAngles()
 
         # Case of penalization at beam near nodes
         if self.simMethod == 1:
