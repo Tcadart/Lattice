@@ -491,6 +491,12 @@ def Lattice_geometry(LatticeGeometry):
                  (0.5, 0.5, 0.75, 1.0, 0.0, 1.0),
                  (0.5, 0.5, 0.75, 0.0, 1.0, 1.0),
                  (0.5, 0.5, 0.75, 1.0, 1.0, 1.0)]
+    IndepenceFigure = [(0.5, 0.25, 0.5, 0.5, 0.5, 0.5),
+               (0.25, 0.5, 0.5, 0.5, 0.5, 0.5),
+               (0.5, 0.75, 0.5, 0.5, 0.5, 0.5),
+               (0.75, 0.5, 0.5, 0.5, 0.5, 0.5),
+               (0.5, 0.5, 0.25, 0.5, 0.5, 0.5),
+               (0.5, 0.5, 0.75, 0.5, 0.5, 0.5)]
 
     if LatticeGeometry == -1:
         LatticeGeometry = random.randint(0, 10)
@@ -536,6 +542,8 @@ def Lattice_geometry(LatticeGeometry):
         return Hybrid3_plus_bar
     if LatticeGeometry == 20:
         return hybridNew
+    if LatticeGeometry == 21:
+        return IndepenceFigure
     if LatticeGeometry == 1000:
         return BCC + Hybrid1 + Hybrid2
 
